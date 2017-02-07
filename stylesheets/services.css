@@ -1,0 +1,49 @@
+.accordion {
+    width: 300px;
+    display: inline-block;
+}
+.accordion ul {
+    list-style:none;
+    margin:0;
+    padding:0;    
+}
+.accordion li {
+    margin:0;
+    padding:0;
+}
+.accordion [type=radio], .accordion [type=checkbox] {
+    display:none;
+}
+.accordion label {
+    display:block;
+    font-size:26px;
+    background:#485460;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color:white;
+    cursor:pointer;
+}
+.accordion ul li label:hover, .accordion [type=radio]:checked ~ label, .accordion [type=checkbox]:checked ~ label {
+    background:#485460;
+    color:white;
+}
+.accordion .content {
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+}
+.accordion p {
+    color:#4e525d;
+    margin:0px;
+}
+
+.vertical ul li {
+    overflow:hidden;
+}
+
+.vertical ul li .content {
+    height:0px;
+    transition: all .5s ease-out;
+}
+.vertical [type=checkbox]:checked ~ label ~ .content {
+    height:346px;
+}
