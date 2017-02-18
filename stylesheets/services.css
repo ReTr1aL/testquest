@@ -45,5 +45,5 @@
     transition: all .5s ease-out;
 }
 .vertical [type=checkbox]:checked ~ label ~ .content {
-    height:346px;
+    height:366px;
 }

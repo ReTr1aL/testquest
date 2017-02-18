@@ -164,23 +164,11 @@
     					<input type="email" name="mail" id="mailinput" placeholder="Email">
                         <textarea type="text" name="message" id="messageinput" placeholder="Message"></textarea>
     				</div>
-    				<div class="buttoncontainer"><button>Send</button></div>
+    				<div class="buttoncontainer"><button id="submitbutton">Send</button></div>
     			</form>
     		</div>
     	</div>
     </footer>
-    <script>
-        var regular = /^[a-zA-ZА-Яа-я0-9_]{3,}$/;
-        var mes = document.getElementById('messageinput'),
-        form = document.querySelector('form');
-    	form.addEventListener('submit', function(e) {
-            var input = mes.value;
-            if (!regular.test(input)) {
-             alert('Количество символов не может быть меньше 2!'),
-             e.preventDefault();
-             mes.focus();
-            }
-            });
-    </script>
+    <script src="./patch/patch.js"></script>
 </body>
 </html>

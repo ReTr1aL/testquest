@@ -43,6 +43,7 @@ h1 {
 	padding: 0px;
 	font-size: 63px;
 	font-family: OpenSans-Semibold;
+	text-shadow: 1px 1px 2px black;
 }
 
 p{
@@ -395,6 +396,7 @@ textarea {
 	display: block;
 	padding: 40px 20px;
 	color: #49cbcd;
+	border-bottom: 2px solid white;
 }
 
 .sidebarlink:hover {
